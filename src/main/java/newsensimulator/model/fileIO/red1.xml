@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkModel>
+    <Vertex>
+        <Bus name="B10" vertexType="Bus">
+            <posX>590.0</posX>
+            <posY>476.0</posY>
+            <busNumber>10</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+        <Load name="Load1" vertexType="Load">
+            <posX>472.0</posX>
+            <posY>512.0</posY>
+            <loadNumber>1</loadNumber>
+            <loadType>1</loadType>
+            <loadPriority>0</loadPriority>
+            <loadMW>5.0</loadMW>
+            <loadMVar>2.0</loadMVar>
+            <loadState>true</loadState>
+        </Load>
+        <ElectricVehicle name="EV1" vertexType="ElectricVehicle">
+            <posX>179.0</posX>
+            <posY>458.0</posY>
+            <electricVehicleNumber>1</electricVehicleNumber>
+            <electricVehicleType>0</electricVehicleType>
+            <electricVehicleState>true</electricVehicleState>
+        </ElectricVehicle>
+        <Bus name="B3" vertexType="Bus">
+            <posX>582.0</posX>
+            <posY>183.0</posY>
+            <busNumber>3</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>2</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B12" vertexType="Bus">
+            <posX>284.0</posX>
+            <posY>419.0</posY>
+            <busNumber>12</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B9" vertexType="Bus">
+            <posX>498.0</posX>
+            <posY>296.0</posY>
+            <busNumber>9</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>4</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B5" vertexType="Bus">
+            <posX>434.0</posX>
+            <posY>388.0</posY>
+            <busNumber>5</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>5</busIncidentLinesNumber>
+        </Bus>
+        <Generator name="G1" vertexType="Generator">
+            <posX>706.0</posX>
+            <posY>420.0</posY>
+            <generatorNumber>1</generatorNumber>
+            <generatorType>0</generatorType>
+            <generatorState>true</generatorState>
+            <generatorMW>0.0</generatorMW>
+            <generatorMVar>0.0</generatorMVar>
+            <generatorMinMW>0.0</generatorMinMW>
+            <generatorMaxMW>0.0</generatorMaxMW>
+        </Generator>
+        <Bus name="B4" vertexType="Bus">
+            <posX>503.0</posX>
+            <posY>374.0</posY>
+            <busNumber>4</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B8" vertexType="Bus">
+            <posX>603.0</posX>
+            <posY>322.0</posY>
+            <busNumber>8</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>2</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B2" vertexType="Bus">
+            <posX>260.0</posX>
+            <posY>263.0</posY>
+            <busNumber>2</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B1" vertexType="Bus">
+            <posX>291.0</posX>
+            <posY>132.0</posY>
+            <busNumber>1</busNumber>
+            <busCode>1</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>false</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+        <Load name="Load2" vertexType="Load">
+            <posX>466.0</posX>
+            <posY>206.0</posY>
+            <loadNumber>2</loadNumber>
+            <loadType>2</loadType>
+            <loadPriority>0</loadPriority>
+            <loadMW>5.0</loadMW>
+            <loadMVar>2.0</loadMVar>
+            <loadState>true</loadState>
+        </Load>
+        <Bus name="B6" vertexType="Bus">
+            <posX>742.0</posX>
+            <posY>402.0</posY>
+            <busNumber>6</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B7" vertexType="Bus">
+            <posX>788.0</posX>
+            <posY>206.0</posY>
+            <busNumber>7</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>2</busIncidentLinesNumber>
+        </Bus>
+        <Bus name="B11" vertexType="Bus">
+            <posX>400.0</posX>
+            <posY>495.0</posY>
+            <busNumber>11</busNumber>
+            <busCode>0</busCode>
+            <busVoltage>1.0</busVoltage>
+            <busAngle>0.0</busAngle>
+            <busComplexVoltageValue>0</busComplexVoltageValue>
+            <busIsolatedStatus>true</busIsolatedStatus>
+            <busTFPresent>false</busTFPresent>
+            <busIncidentLinesNumber>1</busIncidentLinesNumber>
+        </Bus>
+    </Vertex>
+    <Edge>
+        <SimpleLine name="L4" lineType="SimpleLine">
+            <source>B9</source>
+            <target>B5</target>
+            <lineNumber>4</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L4 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L6" lineType="SimpleLine">
+            <source>B5</source>
+            <target>B2</target>
+            <lineNumber>6</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L6 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L1" lineType="SimpleLine">
+            <source>B1</source>
+            <target>B3</target>
+            <lineNumber>1</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L1 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L8" lineType="SimpleLine">
+            <source>B9</source>
+            <target>B8</target>
+            <lineNumber>8</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L8 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L3" lineType="SimpleLine">
+            <source>B9</source>
+            <target>B4</target>
+            <lineNumber>3</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L3 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L9" lineType="SimpleLine">
+            <source>B8</source>
+            <target>B7</target>
+            <lineNumber>9</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L9 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="" lineType="SimpleLine">
+            <source>EV1</source>
+            <target>B12</target>
+            <lineNumber>-1</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@3d08d4a5</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>null</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L10" lineType="SimpleLine">
+            <source>B7</source>
+            <target>B6</target>
+            <lineNumber>10</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L10 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L2" lineType="SimpleLine">
+            <source>B3</source>
+            <target>B9</target>
+            <lineNumber>2</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L2 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L7" lineType="SimpleLine">
+            <source>B5</source>
+            <target>B10</target>
+            <lineNumber>7</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L7 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L5" lineType="SimpleLine">
+            <source>B5</source>
+            <target>B12</target>
+            <lineNumber>5</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L5 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="" lineType="SimpleLine">
+            <source>Load2</source>
+            <target>B3</target>
+            <lineNumber>0</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@3d08d4a5</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>null</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="L11" lineType="SimpleLine">
+            <source>B11</source>
+            <target>B5</target>
+            <lineNumber>11</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@dac00000</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>L11 (X - X)</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="" lineType="SimpleLine">
+            <source>Load1</source>
+            <target>B11</target>
+            <lineNumber>-2</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@3d08d4a5</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>null</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+        <SimpleLine name="" lineType="SimpleLine">
+            <source>G1</source>
+            <target>B6</target>
+            <lineNumber>-3</lineNumber>
+            <lineResistance>0.1</lineResistance>
+            <lineReactance>0.1</lineReactance>
+            <lineMaxCurrent>1.0</lineMaxCurrent>
+            <lineMagCurrent>0.0</lineMagCurrent>
+            <lineSwitchCode>222</lineSwitchCode>
+            <lineSwitchStatus>11</lineSwitchStatus>
+            <lineColor>java.awt.Color[r=0,g=0,b=0]</lineColor>
+            <lineState>true</lineState>
+            <lineStroke>java.awt.BasicStroke@3d08d4a5</lineStroke>
+            <lineComplexCurrent>0</lineComplexCurrent>
+            <lineLabelState>null</lineLabelState>
+            <lineInFault>false</lineInFault>
+        </SimpleLine>
+    </Edge>
+</NetworkModel>

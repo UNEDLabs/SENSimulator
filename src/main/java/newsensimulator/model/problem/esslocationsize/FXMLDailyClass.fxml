@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newsensimulator.model.problem.esslocationsize.FXMLDailyClassController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1288.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@fxmltest.css" />
+          </stylesheets>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#3c00781a" height="571.0" layoutX="10.0" layoutY="11.0" opacity="0.4" stroke="#000000cd" strokeType="INSIDE" width="770.0" />
+            <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#3c00781a" height="571.0" layoutX="791.0" layoutY="11.0" opacity="0.4" stroke="#000000cd" strokeType="INSIDE" width="490.0" />
+            <Label layoutX="53.0" layoutY="68.0" prefHeight="30.0" prefWidth="62.0" text="Industrial" />
+            <Button fx:id="btPreview" layoutX="196.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="115.0" text="PREVIEW LOAD" />
+            <Label layoutX="331.0" layoutY="14.0" prefHeight="38.0" prefWidth="139.0" text="Daily Load Configuration" />
+            <Label layoutX="53.0" layoutY="109.0" prefHeight="30.0" prefWidth="81.0" text="Commercial" />
+            <TextField fx:id="jfCommercial" layoutX="136.0" layoutY="109.0" prefHeight="30.0" prefWidth="551.0" text="20, 20, 19, 18, 20, 22, 25, 40, 70, 85, 91, 93, 89, 93, 94, 95, 100, 90, 75, 70, 65, 55, 30, 20" />
+            <Label layoutX="53.0" layoutY="154.0" prefHeight="30.0" prefWidth="68.0" text="Residential" />
+            <TextField fx:id="jfResidential" layoutX="136.0" layoutY="154.0" prefHeight="30.0" prefWidth="551.0" text="30, 26, 24, 22, 20, 30, 38, 50, 55, 55, 58, 60, 55, 50, 48, 50, 70, 100, 95, 90, 82, 75, 60, 40" />
+            <LineChart fx:id="grIndustrial" layoutX="6.0" layoutY="229.0" prefHeight="211.0" prefWidth="261.0" title="Industrial Load">
+              <xAxis>
+                <CategoryAxis label="Hours" side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" label="\% Load" side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <LineChart fx:id="grCommercial" layoutX="264.0" layoutY="229.0" prefHeight="211.0" prefWidth="261.0" title="Commercial Load">
+               <xAxis>
+                  <CategoryAxis label="Hours" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="\%Load" side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="grResidential" layoutX="509.0" layoutY="229.0" prefHeight="211.0" prefWidth="261.0" title="Residential Load">
+               <xAxis>
+                  <CategoryAxis label="Hours" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="\%Load" side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <TextField fx:id="jfIndustrial" layoutX="136.0" layoutY="68.0" prefHeight="30.0" prefWidth="551.0" text="55, 53, 51, 50, 55, 59, 70, 80, 92, 100, 98, 95, 94, 98, 90, 85, 80, 73, 73, 71, 70, 70, 65, 60" />
+            <Button fx:id="btRun" layoutX="451.0" layoutY="473.0" mnemonicParsing="false" onAction="#runTotal" prefHeight="45.0" prefWidth="115.0" text="RUN TOTAL" />
+            <LineChart fx:id="grLoad" layoutX="792.0" layoutY="294.0" prefHeight="300.0" prefWidth="490.0" title="Total Load">
+               <xAxis>
+                  <CategoryAxis label="Hours" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="[MW]" side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="grLosses" layoutX="791.0" layoutY="7.0" prefHeight="300.0" prefWidth="490.0" title="Losses">
+               <xAxis>
+                  <CategoryAxis label="Hours" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="[MW]" side="LEFT" />
+               </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

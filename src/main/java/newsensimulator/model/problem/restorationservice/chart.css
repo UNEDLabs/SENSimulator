@@ -1,0 +1,20 @@
+
+.chart-series-line {    
+    -fx-stroke-width: 2px;
+}
+.default-color0.chart-series-line { -fx-stroke: #860061; }
+.default-color0.chart-line-symbol { -fx-background-color: #860061, #860061; -fx-padding: 3px;}
+.vbox {
+/*    -fx-background-color: #E6E6E6;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-border-color: #6E6E6E;
+    -fx-border-width: 2px;
+    -fx-padding: 10;
+    -fx-spacing: 8;*/
+    
+  -fx-background-color: #E6E6E6;
+    -fx-background-radius: 7.0;
+  
+
+}
+

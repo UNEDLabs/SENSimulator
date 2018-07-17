@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newsensimulator.model.problem.esslocationsize.FXMLESSPanelController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1288.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@fxmltest.css" />
+          </stylesheets>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#3c00781a" height="571.0" layoutX="10.0" layoutY="11.0" opacity="0.4" stroke="#000000cd" strokeType="INSIDE" width="273.0" />
+            <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#3c00781a" height="571.0" layoutX="791.0" layoutY="11.0" opacity="0.4" stroke="#000000cd" strokeType="INSIDE" width="490.0" />
+            <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#3c00781a" height="571.0" layoutX="293.0" layoutY="11.0" opacity="0.4" stroke="#000000cd" strokeType="INSIDE" width="490.0" />
+            <Label layoutX="84.0" layoutY="7.0" prefHeight="61.0" prefWidth="137.0" text="Configuration ESS Location &amp; Size" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <LineChart fx:id="grLoad" layoutX="792.0" layoutY="294.0" prefHeight="300.0" prefWidth="490.0" title="Total Load">
+               <xAxis>
+                  <CategoryAxis label="Hours" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="[MW]" side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="grLosses" layoutX="791.0" layoutY="7.0" prefHeight="300.0" prefWidth="490.0" title="Total Losses">
+               <xAxis>
+                  <CategoryAxis label="Hours" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="[MW]" side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <TableView fx:id="resultsTable" layoutX="312.0" layoutY="396.0" prefHeight="125.0" prefWidth="457.0">
+              <columns>
+                <TableColumn fx:id="columnType" prefWidth="81.0" text="BESS Type" />
+                <TableColumn fx:id="columnSize" prefWidth="151.0" text="BESS Size [MW]-[MWh]" />
+                  <TableColumn fx:id="columnLocation" prefWidth="91.0" text="BESS Location" />
+                  <TableColumn fx:id="columnObjetive" minWidth="0.0" prefWidth="125.0" text="Objetives" />
+              </columns>
+            </TableView>
+            <ScatterChart fx:id="grCostPerd" layoutX="311.0" layoutY="44.0" prefHeight="178.0" prefWidth="457.0">
+              <xAxis>
+                <CategoryAxis fx:id="resultsCostAxis" autoRanging="true" label="\% costs" prefHeight="22.0" prefWidth="272.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="resultLossAxis" label="\% losses" prefHeight="126.0" prefWidth="74.0" side="LEFT" />
+              </yAxis>
+            </ScatterChart>
+            <Label layoutX="28.0" layoutY="163.0" prefHeight="35.0" prefWidth="210.0" text="Algorithm Configuration " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="513.0" layoutY="7.0" prefHeight="61.0" prefWidth="137.0" text="Results" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="214.0" prefHeight="17.0" prefWidth="148.0" text="Evolutions" />
+            <Label layoutX="28.0" layoutY="247.0" prefHeight="17.0" prefWidth="148.0" text="Poblation Size" />
+            <Label layoutX="28.0" layoutY="372.0" prefHeight="35.0" prefWidth="210.0" text="Number of BESS " textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="77.0" prefHeight="35.0" prefWidth="210.0" text="Metaheuristic" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="metaBox" layoutX="28.0" layoutY="119.0" prefWidth="150.0" />
+            <Button fx:id="initButton" layoutX="114.0" layoutY="486.0" mnemonicParsing="false" onAction="#initAlgorithm" prefHeight="35.0" prefWidth="66.0" text="RUN" />
+            <TextField fx:id="numEvol" layoutX="153.0" layoutY="210.0" prefHeight="25.0" prefWidth="72.0" />
+            <TextField fx:id="tamPob" layoutX="153.0" layoutY="243.0" prefHeight="25.0" prefWidth="72.0" />
+            <TextField fx:id="cantBess" layoutX="29.0" layoutY="407.0" />
+            <ProgressBar fx:id="progressBar" layoutX="47.0" layoutY="541.0" prefWidth="200.0" progress="0.0" />
+            <ScatterChart fx:id="grCostVolt" layoutX="314.0" layoutY="211.0" prefHeight="178.0" prefWidth="457.0">
+               <xAxis>
+                  <CategoryAxis label="\% costs" prefHeight="19.0" prefWidth="264.0" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="resultVoltAxis" label="\% voltage dev." prefHeight="129.0" prefWidth="75.0" side="LEFT" />
+               </yAxis>
+            </ScatterChart>
+            <Button fx:id="testButton" layoutX="351.0" layoutY="533.0" mnemonicParsing="false" onAction="#testSolution" prefHeight="35.0" prefWidth="137.0" text="Preview Graphs" />
+            <Label layoutX="28.0" layoutY="290.0" prefHeight="35.0" prefWidth="273.0" text="Project Planning" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="planAños" layoutX="29.0" layoutY="325.0" prefHeight="25.0" prefWidth="84.0" />
+            <Label layoutX="121.0" layoutY="329.0" prefHeight="17.0" prefWidth="148.0" text="Years" />
+            <CheckBox fx:id="checkcantBESS" layoutX="29.0" layoutY="437.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="218.0" text="Find Number of BESS" wrapText="true" />
+            <Button fx:id="selectedButton" layoutX="559.0" layoutY="533.0" mnemonicParsing="false" onAction="#createBattery" prefHeight="35.0" prefWidth="108.0" text="Add to Network" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
