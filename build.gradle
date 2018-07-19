@@ -36,7 +36,7 @@ dependencies {
     compile 'org.jdom:jdom2:2.0.6'
     compile 'org.uma.jmetal:jmetal-algorithm:5.5.2'
     compile 'org.uma.jmetal:jmetal-core:5.5.2'
-    compile fileTree(dir:'lib', include:'flanagan.jar')
+    compile fileTree(dir:'libs', include:'*.jar')
 
 
     // Use JUnit test framework
@@ -47,5 +47,13 @@ jar {
   baseName = 'SENSimulator'
   version = '0.1.0'
 }
+
 // Define the main class for the application
 mainClassName = 'newsensimulator.Main'
+
+task copyResources(type: Copy) {
+    from 'src/main/java/newsensimulator/view/icons'
+    into 'build/classes/java/main/newsensimulator/view/icons'
+}
+
+build.dependsOn copyResources

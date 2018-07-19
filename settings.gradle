@@ -15,5 +15,5 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'SENSimulator'
+rootProject.name = 'lll'
 

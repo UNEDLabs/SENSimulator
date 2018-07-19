@@ -40,8 +40,7 @@ public class ConsolaAppender implements Appender {
 
     @Override
     public void doAppend(LoggingEvent le) {
-
-    //    MainInterface.getMainInterface().SENSimulatorConsolePrint(le.getRenderedMessage());
+        MainInterface.getMainInterface().SENSimulatorConsolePrint(le.getRenderedMessage());
     }
 
     @Override
