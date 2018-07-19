@@ -2,7 +2,7 @@
 An Interactive and Extensible Simulator of Power Electrical Networks
 
 ## Screenshots
-<img src="/doc/img/SENSimulator-Screenshot.png" width="300" title="SENSimulator"><img src="/doc/img/Test-Network.png" width="300" title="SENSimulator">
+<img src="doc/img/SENSimulator-Screenshot.png" width="300" title="SENSimulator-MainUI"><img src="doc/img/Test-Network.png" width="300" title="Test-Network">
 
 ## Introduction
 
